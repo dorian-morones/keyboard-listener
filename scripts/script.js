@@ -181,11 +181,14 @@ const keyLocations = {
     3: 'Numpad',
     };
 
-  
+document.addEventListener("keydown", function(event) {
+  event.preventDefault()
+  KeyListener(event);
+});
+
 function KeyListener(event) {
-    event.preventDefault()
-    let keycode = event.which || event.keyCode;
-    
+    let keycode =  event.keyCode;
+
     document.getElementById("KeyCode__Result").innerHTML = keycode;
     document.getElementById("Event__Code_Container").innerHTML = codeName(keycode);
     document.getElementById("Event__Wich_Container").innerHTML = event.which;
