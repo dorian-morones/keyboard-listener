@@ -1,0 +1,110 @@
+/* GREY - color: #fbfbfb; */
+/* YELLOW - color: #ffff05; */
+/* PURPLE - color: #8d07f6; */
+/* BLUE - color: #0029fa; */
+/* DARK BLUE - color: #0a1747; */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    background-color: #ececec;
+}
+.container{
+    margin-top: 10%;
+    min-height: 500px;
+}
+#KeyCode_Container{
+}
+#KeyCode__Result{
+    font-size: 40vmin;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.Event__Container{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    padding: 0px;
+    width: 80%;
+    margin-top: 20px;
+}
+.Event__Title{
+    background-color: #ffff05;
+    color: #000;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.Event__Result{
+    color: #0a1747;
+    text-align: center;
+    padding: 4px 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 32px;
+}
+
+#alertContainer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+}
+#alert-text__done{
+    opacity: 0;
+    background-color: mediumspringgreen;
+    padding: 7px 0px;
+    height: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+#alert-text__done p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+#alert-text__done.show{
+    animation: alert 1s 1;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #8d07f6;
+    padding: 7px 0px;
+    height: 40px;
+}
+footer a{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+footer a:hover{
+text-decoration: none;
+color: #ffff05;
+}
+
+@keyframes alert {
+    0% {
+      opacity: 0;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+      height: 40px;
+    }
+    100% {
+      opacity: 0;
+      height: 0px;
+    }
+  }
